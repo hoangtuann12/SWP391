@@ -30,6 +30,8 @@ public class securityConfig {
                 .authorizeHttpRequests(author -> {
                     author.requestMatchers("/api-auth/**").permitAll();// tu do ko can dang nhap
 //                    author.requestMatchers(HttpMethod.GET,"/product").permitAll();// tu do ko can dang nhap
+                    author.requestMatchers("/api/**").permitAll();
+                    author.requestMatchers("/api-sponsor/**").permitAll();
                     author.anyRequest().authenticated(); // tat ca link con lai phai chung thuc
                 }).build();
     }
