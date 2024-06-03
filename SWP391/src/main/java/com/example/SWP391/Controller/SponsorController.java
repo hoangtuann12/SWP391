@@ -1,7 +1,8 @@
 package com.example.SWP391.Controller;
 
+import com.example.SWP391.Payload.Request.SponsorSignUp;
 import com.example.SWP391.Payload.Request.VisitorSignUp;
-import com.example.SWP391.Service.VisitorService;
+import com.example.SWP391.Service.SponsorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,19 +13,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
-public class VisitorController {
-
+@RequestMapping("/api-sponsor")
+public class SponsorController {
     @Autowired
-    private VisitorService visitorService;
+    private SponsorService sponsorService;
     @Autowired
     private AuthenticationManager authenticationManager;
-
     @PostMapping("/sign-up-visitor")
-    public ResponseEntity<String> signUpVisitor(@RequestBody VisitorSignUp visitorSignUp) {
+    public ResponseEntity<String> signUpVisitor(@RequestBody SponsorSignUp sponsorSignUp) {
         try {
-            visitorService.signUpVisitor(visitorSignUp);
-            return ResponseEntity.ok("Visitor signed up successfully");
+            sponsorService.signUpSponsor(sponsorSignUp);
+            return ResponseEntity.ok("Sponsor signed up successfully");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
