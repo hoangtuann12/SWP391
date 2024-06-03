@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3307/EventManagement
     username: root
-    password: admin123
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 jwt:
   private-key: GrjCpMCY0AXDytYdVfddhaoLfIYEjl98UTSKk4FfwXA=
