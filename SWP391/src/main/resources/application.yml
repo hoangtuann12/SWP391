@@ -1,0 +1,14 @@
+server:
+  port: 7979
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3307/EventManagement
+    username: root
+    password: admin123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+jwt:
+  private-key: GrjCpMCY0AXDytYdVfddhaoLfIYEjl98UTSKk4FfwXA=

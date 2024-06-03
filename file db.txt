@@ -1,0 +1,153 @@
+Survey Answer
+answerID int
+answer varchar
+
+SurveyQuestion
+questionID int 
+typeQuestion varchar
+
+SponsorProgram_location
+location  varchar
+
+SponsorProgram
+sponsorProgramID int 
+nameProgram varchar 
+website varchar 
+description varchar 
+image varchar 
+
+SponsorPerson
+sponsorID int 
+emailSponsor varchar 
+phonecompanyName varchar 
+phone varchar 
+companyName varchar 
+companyID_citizenidentificationCard varchar 
+fptStaffEmail varchar 
+password varchar 
+
+Survey
+surveyID int 
+title varchar 
+target varchar 
+publish int
+unpublish int
+
+eventHaveSurvey 
+surveyID fk
+eventID fk
+
+SponsorPerson_Event
+sponsorID fk
+eventID fk 
+
+Schedule 
+scheduleID int 
+scheduleDetail varchar
+staffName varchar
+timeStart date
+date date
+scheduleName varchar
+actor varchar
+place varchar
+
+Feedback
+feedbackID int
+title varchar
+
+createFeedback 
+eventOperatorID fk
+feedbackID fk
+time date
+date date
+
+doSurvey
+surveyID fk
+visitorID fk
+visitorAnswer varchar
+
+Event
+eventID int 
+timeEnd date
+dateEnd date
+timeStart date
+dateStart date
+dateTicketClosed date
+timeTicketClosed date
+dateTicketOpen date
+timeTicketOpen date
+
+Event_location
+location varchar
+eventID fk 
+
+FeedbackQuestion
+feedbackQuestionID itn
+typeQuestion varchar 
+textQuestion varchar
+feedbackID fk
+
+EventOperator
+eventOperatorID int 
+staffID int 
+fullName varchar
+password varchar
+emailEventOperator varchar
+
+manageEvent
+eventOperatorID fk
+eventID fk
+
+Attendance
+eventID fk 
+visitorID fk
+actualAttendance int 
+
+OrderDetail
+orderID fk
+eventID fk
+price float
+orderdetailID int
+quantity int
+
+FeedbackAnswer
+feedbackAnswerID int
+answer varchar
+feedbackQuestionID fk
+
+Staff
+staffID int 
+staffName varchar
+password varchar 
+emailStaff varchar 
+eventOperatorID fk
+
+doFeedback
+feedbackID fk 
+visitorID fk
+visitorAnswer varchar
+
+Visitor 
+visitorID int
+emailVisitor varchar
+fullName varchar
+password varchar
+
+Order 
+orderID int 
+orderDate date 
+oderTime date
+quantity int 
+complete int 
+cancel int
+in-process int 
+total int 
+visitorID fk 
+
+check-in
+staffID fk
+orderID fk 
+timeCheckin date
+dateCheckin date
+
+	
