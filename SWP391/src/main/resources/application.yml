@@ -11,4 +11,4 @@ spring:
     password: admin123
     driver-class-name: com.mysql.cj.jdbc.Driver
 jwt:
-  private-key: GrjCpMCY0AXDytYdVfddhaoLfIYEjl98UTSKk4FfwXA=
+  private-key: CLp/edt3SGCOs7+ByILRGWPR5N168VSi8TG12KBe2/Y=
