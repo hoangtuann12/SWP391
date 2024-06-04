@@ -1,4 +1,4 @@
-package com.example.SWP391.Controller;
+package com.example.SWP391.controller;
 
 import com.example.SWP391.Payload.Request.VisitorSignUp;
 import com.example.SWP391.service.VisitorService;

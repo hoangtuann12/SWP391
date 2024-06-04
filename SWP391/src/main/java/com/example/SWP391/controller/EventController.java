@@ -1,4 +1,4 @@
-package com.example.SWP391.Controller;
+package com.example.SWP391.controller;
 
 import com.example.SWP391.entity.Event;
 import com.example.SWP391.service.EventService;
