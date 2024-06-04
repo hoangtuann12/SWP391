@@ -1,9 +1,7 @@
-package com.example.SWP391.Entity;
+package com.example.SWP391.entity;
 
 
 import jakarta.persistence.*;
-
-import java.util.Set;
 
 @Entity
 public class Role {

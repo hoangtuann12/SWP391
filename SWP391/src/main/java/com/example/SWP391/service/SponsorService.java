@@ -1,9 +1,9 @@
-package com.example.SWP391.Service;
+package com.example.SWP391.service;
 
-import com.example.SWP391.Entity.Account;
-import com.example.SWP391.Entity.AccountRole;
-import com.example.SWP391.Entity.Role;
-import com.example.SWP391.Entity.Sponsor;
+import com.example.SWP391.entity.Account;
+import com.example.SWP391.entity.AccountRole;
+import com.example.SWP391.entity.Role;
+import com.example.SWP391.entity.Sponsor;
 import com.example.SWP391.Payload.Request.SponsorSignUp;
 import com.example.SWP391.repository.AccountRepository;
 import com.example.SWP391.repository.AccountRoleRepository;
