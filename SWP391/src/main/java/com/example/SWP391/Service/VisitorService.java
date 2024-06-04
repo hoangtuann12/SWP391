@@ -6,16 +6,13 @@ import com.example.SWP391.Entity.AccountRole;
 import com.example.SWP391.Entity.Role;
 import com.example.SWP391.Entity.Visitor;
 import com.example.SWP391.Payload.Request.VisitorSignUp;
-import com.example.SWP391.Respository.AccountRepository;
-import com.example.SWP391.Respository.AccountRoleRepository;
-import com.example.SWP391.Respository.RoleRepository;
-import com.example.SWP391.Respository.VisitorRepository;
+import com.example.SWP391.repository.AccountRepository;
+import com.example.SWP391.repository.AccountRoleRepository;
+import com.example.SWP391.repository.RoleRepository;
+import com.example.SWP391.repository.VisitorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Collections;
 
 @Service
 public class VisitorService {
