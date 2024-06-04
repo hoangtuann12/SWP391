@@ -1,7 +1,7 @@
 package com.example.SWP391.Controller;
 
 import com.example.SWP391.Payload.Request.VisitorSignUp;
-import com.example.SWP391.Service.VisitorService;
+import com.example.SWP391.service.VisitorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

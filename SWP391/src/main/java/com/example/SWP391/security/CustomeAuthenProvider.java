@@ -1,6 +1,6 @@
 package com.example.SWP391.Security;
 
-import com.example.SWP391.Entity.Account;
+import com.example.SWP391.entity.Account;
 import com.example.SWP391.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
