@@ -1,16 +1,15 @@
-package com.example.SWP391.controller;
+package com.example.SWP391.Controller;
 
 import com.example.SWP391.Payload.Request.SponsorSignUp;
-import com.example.SWP391.model.dto.SponsorDto;
 import com.example.SWP391.service.SponsorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api-sponsor")
@@ -27,19 +26,5 @@ public class SponsorController {
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
-    }
-
-    @GetMapping
-    public ResponseEntity<List<SponsorDto>> getAllSponsors() {
-        List<SponsorDto> sponsors = sponsorService.getAllSponsors();
-        return ResponseEntity.ok(sponsors);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<SponsorDto> getSponsorById(@PathVariable Long id) {
-        Optional<SponsorDto> sponsorOptional = sponsorService.getSponsorById(id);
-        return sponsorOptional
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 }
