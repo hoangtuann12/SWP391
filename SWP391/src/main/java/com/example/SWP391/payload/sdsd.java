@@ -1,4 +1,4 @@
-package com.example.SWP391.Payload;
+package com.example.SWP391.payload;
 
 public class sdsd {
 }

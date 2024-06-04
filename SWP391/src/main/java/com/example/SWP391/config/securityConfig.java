@@ -1,10 +1,8 @@
-package com.example.SWP391.Config;
+package com.example.SWP391.config;
 
-import com.example.SWP391.Security.CustomeAuthenProvider;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.SWP391.security.CustomeAuthenProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

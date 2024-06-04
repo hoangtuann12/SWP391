@@ -1,4 +1,4 @@
-package com.example.SWP391.Payload.Response;
+package com.example.SWP391.payload.response;
 
 import lombok.Data;
 

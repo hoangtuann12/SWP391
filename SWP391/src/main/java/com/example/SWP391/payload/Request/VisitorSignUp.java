@@ -1,4 +1,4 @@
-package com.example.SWP391.Payload.Request;
+package com.example.SWP391.payload.Request;
 
 public class VisitorSignUp {
     private String email;

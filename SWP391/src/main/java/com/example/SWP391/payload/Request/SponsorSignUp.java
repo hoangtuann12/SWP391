@@ -1,4 +1,4 @@
-package com.example.SWP391.Payload.Request;
+package com.example.SWP391.payload.Request;
 
 import lombok.Data;
 

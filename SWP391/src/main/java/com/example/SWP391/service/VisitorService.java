@@ -1,11 +1,11 @@
-package com.example.SWP391.Service;
+package com.example.SWP391.service;
 
 
-import com.example.SWP391.Entity.Account;
-import com.example.SWP391.Entity.AccountRole;
-import com.example.SWP391.Entity.Role;
-import com.example.SWP391.Entity.Visitor;
-import com.example.SWP391.Payload.Request.VisitorSignUp;
+import com.example.SWP391.entity.Account;
+import com.example.SWP391.entity.AccountRole;
+import com.example.SWP391.entity.Role;
+import com.example.SWP391.entity.Visitor;
+import com.example.SWP391.payload.Request.VisitorSignUp;
 import com.example.SWP391.repository.AccountRepository;
 import com.example.SWP391.repository.AccountRoleRepository;
 import com.example.SWP391.repository.RoleRepository;

@@ -1,8 +1,7 @@
-package com.example.SWP391.Controller;
+package com.example.SWP391.controller;
 
-import com.example.SWP391.Payload.Request.SponsorSignUp;
-import com.example.SWP391.Payload.Request.VisitorSignUp;
-import com.example.SWP391.Service.SponsorService;
+import com.example.SWP391.payload.Request.SponsorSignUp;
+import com.example.SWP391.service.SponsorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
