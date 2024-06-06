@@ -4,7 +4,7 @@ import com.example.SWP391.entity.Account;
 import com.example.SWP391.entity.AccountRole;
 import com.example.SWP391.entity.Role;
 import com.example.SWP391.entity.Sponsor;
-import com.example.SWP391.Payload.Request.SponsorSignUp;
+import com.example.SWP391.payload.Request.SponsorSignUp;
 import com.example.SWP391.model.dto.SponsorDto;
 import com.example.SWP391.model.mapper.SponsorMapper;
 import com.example.SWP391.repository.AccountRepository;

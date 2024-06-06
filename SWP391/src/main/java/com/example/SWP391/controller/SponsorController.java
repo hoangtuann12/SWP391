@@ -1,6 +1,6 @@
-package com.example.SWP391.Controller;
+package com.example.SWP391.controller;
 
-import com.example.SWP391.Payload.Request.SponsorSignUp;
+import com.example.SWP391.payload.Request.SponsorSignUp;
 import com.example.SWP391.model.dto.SponsorDto;
 import com.example.SWP391.service.SponsorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class SponsorController {
     private SponsorService sponsorService;
     @Autowired
     private AuthenticationManager authenticationManager;
-    @PostMapping("/sign-up-visitor")
+    @PostMapping("/sign-up-sponsor")
     public ResponseEntity<String> signUpVisitor(@RequestBody SponsorSignUp sponsorSignUp) {
         try {
             sponsorService.signUpSponsor(sponsorSignUp);
